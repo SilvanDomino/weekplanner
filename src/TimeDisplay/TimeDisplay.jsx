@@ -9,7 +9,6 @@ export function TimeDisplay({periodWeek}) {
         const timer = setInterval(() => {
             setDate(new Date());
         }, 1000);
-
         // Clean up the interval on component unmount
         return () => clearInterval(timer);
     }, []);
@@ -28,11 +27,12 @@ export function TimeDisplay({periodWeek}) {
     return (
         <section className={styles.timeDisplay}>
             <div className={styles.date}>{date.toLocaleDateString("nl-NL", dateOptions)}</div>
-            <div className={styles.weekNumber}>Week: {getWeek(date)}</div>
-            <div className={styles.periodWeek}>P{periodWeek.period}.W{periodWeek.week}</div>
             <div className={styles.time}>
                 {date.toLocaleTimeString("nl-NL", timeOptions)}
             </div>
+            <div className={styles.weekNumber}>Week: {getWeek(date)}</div>
+            <div className={styles.periodWeek}>P{periodWeek.period}.W{periodWeek.week}</div>
+            
         </section>
     )
 }

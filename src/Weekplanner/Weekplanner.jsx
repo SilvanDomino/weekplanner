@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Day } from "./Day";
 import { format } from "date-fns";
+import styles from './Weekplanner.module.css';
 
 export function Weekplanner({ periodWeek }) {
     const [data, setData] = useState(null);
@@ -21,11 +22,10 @@ export function Weekplanner({ periodWeek }) {
         )
     } else{
         const thisWeekEvents = FilterEvents2(data);
-        console.log(thisWeekEvents);
         return (
-            <section>
-                <h1>Weekplanner</h1>
-                <ul>
+            <section className={styles.weekPlanner}>
+                <h1 className={styles.header}>Weekplanner</h1>
+                <ul className={styles.weekCalender}>
                     {thisWeekEvents.map(day => {
                         return <Day date={day.date} events={day.events} key={day.date.getDay()}/>
                     })}

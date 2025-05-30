@@ -7,10 +7,10 @@ function App() {
   const periodWeek = { period: 4, week: 4 };
 
   return (
-    <main>
-      <h1>Welkom Software Development Team</h1>
-      <TimeDisplay periodWeek={periodWeek}/>
+    <main className='app'>
       <Weekplanner/>
+      <TimeDisplay periodWeek={periodWeek}/>
+      
     </main>
     
   )
