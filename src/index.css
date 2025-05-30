@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root{
+  --primary-color: dodgerblue;
+  --background-color: #fafafd;
+  --text-color-light: #fff;
+  --text-color-dark: #000;
+}
+body{
+  padding: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+}
