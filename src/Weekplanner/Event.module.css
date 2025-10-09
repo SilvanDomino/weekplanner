@@ -1,0 +1,51 @@
+.event{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.noDate{
+    opacity: 60%;
+    font-size: 20px;
+    padding: 8px 10px;
+}
+.isToday {
+    animation: todayPulse 1s linear infinite;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 30px;
+}
+.pastDue{
+    opacity: 40%;
+}
+.future{
+    
+}
+
+@keyframes todayPulse {
+    0% {
+        background-color: var(--accent-color);
+        transform: rotate(1deg);
+    }
+    25%{
+        transform: rotate(-1deg);
+    }
+    50% {
+        background-color: var(--primary-color);
+        transform: rotate(2deg);
+    }
+    75%{
+        transform: rotate(-1deg);
+    }
+    100% {
+        background-color: var(--accent-color);
+        transform: rotate(1deg);
+    }
+}
+
+.date{
+    padding: 5px;
+    border-radius: 8px;
+}
