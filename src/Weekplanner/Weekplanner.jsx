@@ -2,11 +2,13 @@ import { useEffect, useState } from "react"
 import { TrelloEvent } from "./TrelloEvent";
 import styles from './Weekplanner.module.css';
 
+
+//I should hide the keys in a backend
 export function WeekplannerT() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        const url = "https://api.trello.com/1/lists/68ccfc627a0245274a1f9825/cards?key=c5f7c16db786ddf46b16c25f9ec7fffe&token=ATTA3dc8035b07e58b88d8ca76bc3f0946b5c0faebee5029485dbeeb5292a367983cE6AB4D91";
+        const url = "https://weekplanner.mediacollege.dev/getCards.php";
         const settings = {
             method: "GET",
             headers: {
