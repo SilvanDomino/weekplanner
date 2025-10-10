@@ -18,6 +18,7 @@ export function WeekplannerT() {
         fetch(url, settings)
             .then(response => response.json())
             .then(content => setData(content))
+            .catch(err=>console.error(err))
     }, [])
 
     let formattedData = data;
@@ -57,17 +58,5 @@ function sortCards(data){
             return 1;
         } else return 0;
     });
-    return data;
-}
-async function fetchCard(id){
-    const url = "https://api.trello.com/1/cards/NBiho7dI?key=c5f7c16db786ddf46b16c25f9ec7fffe&token=ATTA3dc8035b07e58b88d8ca76bc3f0946b5c0faebee5029485dbeeb5292a367983cE6AB4D91";
-    const settings = {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json",
-        },
-    }
-    let response = await fetch(url, settings)
-    let data = await response.json();
     return data;
 }
