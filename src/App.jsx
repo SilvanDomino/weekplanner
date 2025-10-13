@@ -1,5 +1,6 @@
 
 import './App.css'
+import { Pres } from './Pres/Pres';
 import { TimeDisplay } from './TimeDisplay/TimeDisplay'
 import { WeekplannerT } from './Weekplanner/Weekplanner';
 
@@ -8,7 +9,11 @@ function App() {
   return (
     <main className='app'>
       <WeekplannerT/>
-      <TimeDisplay/>
+      <div className='rightbar'>
+        <TimeDisplay/>
+        <Pres/>
+      </div>
+      
       
     </main>
     

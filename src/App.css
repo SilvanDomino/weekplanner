@@ -2,3 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
+.rightbar{
+     height: 100vh;
+     background-color: var(--primary-color);
+}

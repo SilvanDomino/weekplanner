@@ -1,0 +1,36 @@
+.pres{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 90px;
+
+}
+.personDot{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 110px;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    align-self: center;
+    justify-self: center;
+}
+.person{
+
+}
+.dot{
+    background-color: hotpink;
+    border: 1px solid magenta;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.SD{
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+.out{
+    background-color: grey;
+}

@@ -39,8 +39,6 @@ export function TimeDisplay() {
                     <span>Week 7</span>
                 </div>
             </div>
-            
-            
         </section>
     )
 }

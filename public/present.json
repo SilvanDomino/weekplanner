@@ -1,0 +1,14 @@
+[
+    {
+        "code": "hers",
+        "pres": ["SD", "SD", false, "SD", "SD"]
+    },
+    {
+        "code": "rosb",
+        "pres": ["MA", "MA", "PDG", "SD", false]
+    },
+    {
+        "code": "sjo",
+        "pres": ["SD", "SD", "SD", "SD", "SD"]
+    }
+]
