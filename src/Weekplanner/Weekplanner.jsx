@@ -3,7 +3,6 @@ import { TrelloEvent } from "./TrelloEvent";
 import styles from './Weekplanner.module.css';
 
 
-//I should hide the keys in a backend
 export function WeekplannerT() {
     const [data, setData] = useState(null);
 
