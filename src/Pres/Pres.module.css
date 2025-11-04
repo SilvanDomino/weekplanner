@@ -1,21 +1,18 @@
 .pres{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px 90px;
-
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 40px;
+    gap: 20px;
 }
 .personDot{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    width: 110px;
-    
+    width: 120px;
     justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 20px;
     padding: 5px 15px;
-    align-self: center;
-    justify-self: center;
 }
 .person{
 
@@ -33,4 +30,5 @@
 }
 .out{
     background-color: grey;
+    border: 1px solid black;
 }

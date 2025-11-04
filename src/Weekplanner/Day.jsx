@@ -25,7 +25,6 @@ export function Day({date, events}){
                     return <li className={styles.event} key={index}>{event}</li>
                 })}
             </ul>
-            
         </li>
     )
 }

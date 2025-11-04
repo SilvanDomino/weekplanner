@@ -9,6 +9,9 @@ export function Pres(){
         let url = "present.json";
         let response = await fetch(url);
         let data = await response.json();
+        data.sort((a, b)=>{
+            return a.code > b.code;
+        })
         return data;
     }
     useEffect(()=>{
@@ -20,7 +23,7 @@ export function Pres(){
         return(
             <div className={styles.pres}>
                 {data.map(person=>{
-                    return <PersonDot person={person}/>
+                    return <PersonDot person={person} key={person.code}/>
                 })}
             </div>
         )

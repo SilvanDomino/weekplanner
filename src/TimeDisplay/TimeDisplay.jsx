@@ -36,7 +36,7 @@ export function TimeDisplay() {
                 <div className={styles.weekTile}>Week: {getWeek(date)}</div>
                 <div className={styles.period}>
                     <span>Periode 1</span>
-                    <span>Week 7</span>
+                    <span>Week 9</span>
                 </div>
             </div>
         </section>

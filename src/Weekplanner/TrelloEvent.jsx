@@ -16,7 +16,7 @@ export function TrelloEvent({ trelloCard }) {
         todoStatus == "today" && styles.isToday,    //Date is today
         todoStatus == "future" && styles.future,    //Date is in the future
     )}>
-      <h3>{trelloCard.name}</h3>
+      <h3 className={styles.name}>{trelloCard.name}</h3>
       {trelloCard.due ? DateFormat():""}
     </li>
   );

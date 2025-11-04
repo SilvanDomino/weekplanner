@@ -1,16 +1,26 @@
 .event{
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     color: white;
     border-radius: 15px;
     box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
     border-left: 10px solid var(--accent-color);
-    font-size: 4rem;
-    text-shadow: -1px 0 3px rgba(0, 0, 0, 0.2), -1px 0 2px rgba(0, 0, 0, 0.4);
+    font-size: 5rem;
+    text-shadow: -1px 0 3px rgba(0, 0, 0, 0.6), -1px 0 2px rgba(0, 0, 0, 0.6);
     letter-spacing: 1px;
+    /* max-height: 148px; */
+    min-width: 0;
+    overflow: hidden;
+}
+.name{
+    overflow: hidden;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
 }
 .date{
-    font-size: 3.5rem;
+    font-size: 4rem;
     opacity: 95%;
 }
 .noDate{
@@ -19,35 +29,35 @@
     padding: 8px 10px;
 }
 .isToday {
-    animation: todayPulse 1s linear infinite;
-    background-color: #ffffff;
+    animation: todayPulse 3s linear infinite;
+    font-size: 4.5rem;
+    text-shadow: -1px 0 6px rgba(0, 0, 0, 0.4), -1px 0 2px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    max-height: fit-content;
     padding: 20px;
-    font-size: 30px;
 }
 .pastDue{
-    opacity: 50%;
+    opacity: 40%;
+    font-size: 2.5rem;
+    padding: 7px;
+    .date{
+        font-size: 2.5rem;
+        opacity: 95%;
+    }
 }
-.future{
-    
-}
+
 
 @keyframes todayPulse {
     0% {
-        background-color: var(--accent-color);
+        border-left: 10px solid var(--accent-color);
         transform: rotate(1deg);
     }
-    25%{
-        transform: rotate(-1deg);
-    }
     50% {
-        background-color: var(--primary-color);
-        transform: rotate(2deg);
-    }
-    75%{
-        transform: rotate(-1deg);
+        border-left: 10px solid green;
+        transform: rotate(0deg);
     }
     100% {
-        background-color: var(--accent-color);
+        border-left: 10px solid var(--accent-color);
         transform: rotate(1deg);
     }
 }

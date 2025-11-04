@@ -9,6 +9,74 @@
     },
     {
         "code": "sjo",
-        "pres": ["SD", "SD", "SD", "SD", "SD"]
+        "pres": [false, "SD", "SD", "SD", "SD"]
+    },
+    {
+        "code": "ken",
+        "pres": ["HLO", "HLO", "SD", "HLO", false]
+    },
+    {
+        "code": "hnr",
+        "pres": [false, "BPV", "SD", "SD", "SD"]
+    },
+    {
+        "code": "javd",
+        "pres": ["SD", "SD", false, "SD", "SD"]
+    },
+    {
+        "code": "desm",
+        "pres": [false, false, false, false, false]
+    },
+    {
+        "code": "doms",
+        "pres": [false,false,false, "SD", "SD"]
+    },
+    {
+        "code": "goe",
+        "pres": ["LD", "LD", "LD", "LD", "LD"]
+    },
+    {
+        "code": "hog",
+        "pres": ["SD", "SD", "SD", false, "rooster"]
+    },
+    {
+        "code": "heij",
+        "pres": [false,"SD","PDG","SD","SD"]
+    },
+    {
+        "code": "helb",
+        "pres": ["MA","MA",false,"MA","MA"]
+    },
+    {
+        "code": "henj",
+        "pres": [false,false,false,false,false]
+    },
+    {
+        "code": "veri",
+        "pres": ["SD","SD",false,false,"SD"]
+    },
+    {
+        "code": "ploe",
+        "pres": [false,"SD","SD",false,"SD"]
+    },
+    {
+        "code": "sca",
+        "pres": ["MA","MA","MA","MA","MA"]
+    },
+    {
+        "code": "stam",
+        "pres": ["SD","BPV","SD","thuis",false]
+    },
+    {
+        "code": "mule",
+        "pres": ["??","??","SD","??","??"]
+    },
+    {
+        "code": "wile",
+        "pres": [false,"SD","SD",false,"SD"]
+    },
+    {
+        "code": "winu",
+        "pres": ["SD","SD","SD","SD",false]
     }
 ]
